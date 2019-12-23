@@ -1,0 +1,6 @@
+(gcim Win32_OperatingSystem -ComputerName wcw00360).LastBootUpTime
+
+##yogi##
+##yogi3
+why thi sis not considering the changes
+##yogi2##
