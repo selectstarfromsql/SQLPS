@@ -1,0 +1,9 @@
+Will insert account as windows login and assign sysadmin role
+
+[Reflection.Assembly]::LoadWithPartialName('Microsoft.SqlServer.Smo')  
+$sqlSrv = New-Object 'Microsoft.SqlServer.Management.Smo.Server' "servername\instance"
+$login = New-Object -TypeName Microsoft.SqlServer.Management.Smo.Login -ArgumentList $sqlSrv, "ww-corp\account"
+$login.LoginType = "WindowsUser"
+$login.Create()
+$login.AddToRole("sysadmin")
+$login.Alter()
