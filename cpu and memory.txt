@@ -2,5 +2,7 @@
 
 get-wmiobject Win32_ComputerSystem -computer (gc C:\Users\ps317387\Desktop\swnservers.txt ) | select Name,@{name="TotalPhysicalMemory(MB)";expression={($_.TotalPhysicalMemory/1mb).tostring("N0")}},NumberOfProcessors
 
+
 ##yogi
-#yogi2
+##yogi2
+

@@ -1,4 +1,6 @@
-﻿$servers = gc "C:\Users\ps317387\Desktop\sat 23.txt"
+﻿## change the server list 
+
+$servers = gc "C:\Users\ps317387\Desktop\sat 23.txt"
 
  
     foreach($computer in $servers) 
